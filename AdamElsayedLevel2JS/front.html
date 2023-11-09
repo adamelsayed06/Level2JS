@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            width: 52%;
+            font-size: 19px;
+        }
+
+        .hint{
+            font-size: 10px;
+        }
+
+        img{
+            padding: 10px;
+        }
+
+        .firstFloorLink{
+            position: absolute;
+            bottom: 50px;
+            right: 500px;
+        }
+
+        .stairsLink{
+            position: absolute;
+            bottom: 50px;
+            left: 200px;
+        }
+
+        .respawn{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        body{
+            background-color: orangered;
+        }
+
+    </style>
+    <script>
+        function audioCall() {
+            document.getElementById("my_audio").play();
+        }
+    </script>
+</head>
+<body onload = "audioCall">
+    <div class = "header">
+        <p>As you open the creaky door, you take a few steps forward and find yourself at the base of a staircase. You find yourself faced with a decision: should you go up the steps
+        or explore the first floor? <strong>Make your decision quickly. Footsteps approach</strong>.
+        <p>
+    </div>
+    <div class = "hint">
+        <a href = "death.html"> click me for a surprise!</a>
+    </div>
+    <div class = "stairs">
+        <img src = "stairs.jpeg" width = "800" height = "750">
+        <img src = "firstFloor.jpg" width = "800" height = "750">
+    </div>
+
+    <div class = "firstFloorLink">
+        <a href = "painting.html">Take your chances and stay on the first floor</a>
+    </div>
+
+    <div class = "stairsLink">
+        <a href = "secondFloor.html">Bolt up the stairs as quicly and quietly as you can</a>
+    </div>
+    
+    
+    <div class = "respawn">
+        <a href = "index.html">Go back to the start of the story</a>
+    </div>
+
+    
+
+    <audio id="my_audio" src="footsteps-on-wood-floor-14735.mp3" loop="loop"></audio>
+</body>
+</html>
